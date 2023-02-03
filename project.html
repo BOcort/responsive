@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    
+    <title>PROJECT HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="header-logo">ILHAM LIE</div>
+        <div class="header-list">
+          <ul>
+            <li><a href="">Tentang Saya</a> </li>
+            <li><a href="">Pelajaran</a></li>
+            <li><a href="">Hubungi Saya</a></li>
+          </ul>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="top-wrapper">
+            <div class="container">
+                <h1>ILHAM LIE<span>.</span></h1>
+                <h3>MY PORTFOLIO</h3>
+                <img src="Ninja Ken.png" alt="">
+            </div>
+        </div>
+        <div class="tentang">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>Saya sangat tertarik dengan dunia teknologi dan ingin mengejar karir sebagai profesional IT. Saya ingin belajar dan meningkatkan kemampuan dalam bidang pemrograman, sistem, dan jaringan. Saya juga ingin menjadi seorang yang kreatif dan inovatif dalam mencari solusi dan mengatasi masalah. Saya berdedikasi untuk terus belajar dan berkembang dalam bidang ini dan berharap dapat menjadi ahli dalam bidang yang saya minati.</p>
+            </div>
+        </div>
+        <div class="pelajaran">
+            <div class="container">
+                
+                <h2 class="heading-lesson">Sampel Project</h2>
+                <div class="left-side">
+                    <button class="prev" onclick="nextslide(-1)">&#10094;</button>
+                </div>
+                <div class="lesson" id="bang">
+                    <img src="1.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div class="lesson" id="bang">
+                    <img src="2.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+                <div class="lesson" id="bang">
+                    <img src="3.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+                <div class="right-side">
+                    <button class="next" onclick="nextslide(1)">&#10095;</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="pesan">
+            <div class="container">
+                <h2 class="heading-lesson">Pesan Untuk Saya</h2>
+                <div class="message">
+                    <div class="input-text">
+                        <input type="text" class="emailmu" value="    EMAIL (Diperlukan)   ">
+                    </div>
+                    <div class="input-area">
+                        <input type="form" class="message-mu"value="    Message (Diperlukan)   " class="area">
+                    </div>
+                    <div class="input-button">
+                        <input type="submit" class="kirimkan" onclick="sending()" value="KIRIM" id="openModalButton">
+                    </div>
+                    <div id="myModal">
+                        <div id="modalContent">
+                          <span id="closeModalIcon">&times;</span>
+                          <h2>Pesan Anda</h2>
+                          <div class="hasil"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                ILHAM TATAYO LIE
+            </div>
+            <div class="footer-right">
+                <a href="">@ILHAMLIE_</a>
+            </div>
+        </div>
+    </footer>
+    <script src="project.js"></script>
+    <script src="pesan.js"></script>
+</body>
+</html>
